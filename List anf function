@@ -1,0 +1,67 @@
+# Python program to demonstrate list operations
+
+# 1. Creating a list
+my_list = [10, 20, 30, 40, 50]
+print("Original List:", my_list)
+
+# 2. max and min
+print("Maximum value:", max(my_list))
+print("Minimum value:", min(my_list))
+
+# 3. insert()
+my_list.insert(2, 25)   # Insert 25 at index 2
+print("After insert:", my_list)
+
+# 4. append()
+my_list.append(60)   # Add element at end
+print("After append:", my_list)
+
+# 5. pop()
+my_list.pop()        # Removes last element
+print("After pop:", my_list)
+
+# 6. remove()
+my_list.remove(25)   # Removes first occurrence of 25
+print("After remove:", my_list)
+
+# 7. extend()
+my_list.extend([70, 80])  # Add multiple elements
+print("After extend:", my_list)
+
+# 8. list constructor
+new_list = list((1, 2, 3, 4, 5))  # Creating list from tuple
+print("List using constructor:", new_list)
+
+# 9. list comprehension
+squares = [x**2 for x in range(1, 6)]
+print("List comprehension (squares):", squares)
+
+# 10. count()
+print("Count of 20 in list:", my_list.count(20))
+
+# 11. length of list
+print("Length of my_list:", len(my_list))
+
+# 12. reverse()
+my_list.reverse()
+print("After reverse:", my_list)
+
+# 13. copy()
+copy_list = my_list.copy()
+print("Copied List:", copy_list)
+
+output 
+Original List: [10, 20, 30, 40, 50]
+Maximum value: 50
+Minimum value: 10
+After insert: [10, 20, 25, 30, 40, 50]
+After append: [10, 20, 25, 30, 40, 50, 60]
+After pop: [10, 20, 25, 30, 40, 50]
+After remove: [10, 20, 30, 40, 50]
+After extend: [10, 20, 30, 40, 50, 70, 80]
+List using constructor: [1, 2, 3, 4, 5]
+List comprehension (squares): [1, 4, 9, 16, 25]
+Count of 20 in list: 1
+Length of my_list: 7
+After reverse: [80, 70, 50, 40, 30, 20, 10]
+Copied List: [80, 70, 50, 40, 30, 20, 10]
