@@ -15,8 +15,8 @@ print (a)
 # using while loop in dict
 
 a = {
-    "name": "Jai",
-    "age": 2o,
+    "name": "jai",
+    "age": 20,
     "course": "ECE",
     "native": "villupuram"
 }
@@ -24,8 +24,8 @@ a = {
 values = list(a.values())
 i = 0
 while i < len(values):
-    print(values[i])
-    i += 1
+    prinvalueses[i])
+    i+= 1
 
 #output 
 jai
