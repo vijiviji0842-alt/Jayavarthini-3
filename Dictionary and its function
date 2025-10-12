@@ -1,0 +1,13 @@
+a={"name":"jai",
+      "age":20,
+      "native":"villupuram"}
+print(a)
+del a["age"]
+print (a)
+a["age"]=20
+print (a)
+
+#output 
+{'name': 'jai', 'age': 20, 'native': 'villupuram'}
+{'name': 'jai', 'native': 'villupuram'}
+{'name': 'jai', 'native': 'villupuram', 'age': 20}
