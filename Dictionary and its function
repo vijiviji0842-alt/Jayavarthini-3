@@ -11,3 +11,24 @@ print (a)
 {'name': 'jai', 'age': 20, 'native': 'villupuram'}
 {'name': 'jai', 'native': 'villupuram'}
 {'name': 'jai', 'native': 'villupuram', 'age': 20}
+
+# using while loop in dict
+
+a = {
+    "name": "Jai",
+    "age": 2o,
+    "course": "ECE",
+    "native": "villupuram"
+}
+
+values = list(a.values())
+i = 0
+while i < len(values):
+    print(values[i])
+    i += 1
+
+#output 
+jai
+20
+ECE
+villupuram 
