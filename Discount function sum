@@ -1,0 +1,17 @@
+def amount_paid(X, Y, Z):
+    if X == Y and X != Z:
+        total = (X * 0.9 + Y * 0.9 + Z)
+    elif X == Z and X != Y:
+        total = (X * 0.9 + Z * 0.9 + Y)
+    elif Y == Z and Y != X:
+        total = (Y * 0.9 + Z * 0.9 + X)
+    else:
+        total = X + Y + Z  # no discount
+    
+    print(f"{total:.2f}")
+X, Y, Z = map(int, input().split())
+amount_paid(X, Y, Z)
+
+output
+100  100  200
+380.00
